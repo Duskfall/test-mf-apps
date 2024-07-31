@@ -16,8 +16,6 @@ import React from 'react';
 class Mfe4Element extends HTMLElement {
   connectedCallback() {
     console.log('http-mfe-react-element connectedCallback from DOM');
-
-    window.React = React;
     const root = ReactDOM.createRoot(this);
     root.render(<App />);
   }
