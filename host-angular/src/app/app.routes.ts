@@ -19,6 +19,18 @@ export const appRoutes: Route[] = [
       exposedModule: './web-components',
       elementName: 'http-mfe-react-element',
     },
+    children: [
+      {
+        path: '**',
+        component: WebComponentWrapper,
+        data: {
+          remoteEntry: `http://localhost:4301/remoteEntry.js`,
+          remoteName: 'http_mfe_react',
+          exposedModule: './web-components',
+          elementName: 'http-mfe-react-element',
+        },
+      },
+    ],
   },
   
   {
