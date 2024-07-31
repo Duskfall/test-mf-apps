@@ -22,7 +22,6 @@
             "input": "host-angular/public"
           }
         ],
-        "styles": ["host-angular/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "host-angular/webpack.config.ts"
