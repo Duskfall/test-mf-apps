@@ -2,7 +2,9 @@
   "name": "@nx-angular-host-react-mfe2/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "npx nx run host-angular:serve"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~18.1.0",
